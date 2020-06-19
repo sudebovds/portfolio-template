@@ -18,6 +18,10 @@
 }
 .intro__inner_content{
     width: 50%;
+
+    @media @mobile{
+        width: 100%;
+    }
 }
 .intro__inner_content{
     
@@ -63,6 +67,24 @@
         flex-direction: column;
         max-width: 70%;
     }
+
+    @media @mobile{
+        flex-direction: row;
+
+        font-size: 10px;
+
+        .intro__btns_hire{
+            margin-right: 8px;
+        }
+
+        .inttro__btns_cv{
+            margin-right: 0;
+        }
+
+        a{
+            padding: 5px 10px;
+        }
+    }
 }
 .intro__inner_btns a{
     padding: 1rem 2rem 1rem 2rem;
@@ -93,5 +115,9 @@
 
     @media @big-tablet{
         width: 350px;
+    }
+
+    @media @mobile{
+        display: none;
     }
 }

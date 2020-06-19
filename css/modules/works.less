@@ -26,11 +26,21 @@
 .works__portfolio{
     display: flex;
     flex-wrap: wrap;
-    margin: -1rem;    
-}
-.works__portfolio_item{
-    flex-basis: 33.33%;
-    padding: 1rem 1rem 1rem 1rem;   
+    margin: -1rem;   
+    
+    &_item{
+        flex-basis: 33.33%;
+        padding: 1rem 1rem 1rem 1rem;
+        
+
+        @media @tablet{
+            width: 50%;
+        }
+
+        @media @mobile{
+            flex-basis: 100%;
+        }
+    }
 }
 
 /*PORTFOLIO ITEM*/
