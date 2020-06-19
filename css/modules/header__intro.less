@@ -1,0 +1,97 @@
+//main: ../style.less
+
+.intro__inner{
+    display: flex;
+    
+    padding: 6.6rem 0 8rem 0;
+    position: relative;
+    
+    background: url(../images/dude_bgr.png) right bottom no-repeat;
+
+    border-bottom: 1px solid fade(@gray_color, 30%);
+
+    @media @big-tablet{
+        padding: 3rem 0 3rem 0;
+
+        background-size: auto 445px;
+    }
+}
+.intro__inner_content{
+    width: 50%;
+}
+.intro__inner_content{
+    
+}
+.intro__content_subtitle{
+    font-weight: 200;
+    font-size: 2.13rem;
+    color: @main_color_black;
+
+    @media @big-tablet{
+        font-size: 1.7rem;
+    }
+}
+.intro__inner_title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: @main_color_black;
+    margin-bottom: 5px;
+
+    @media @big-tablet{
+        font-size: 2rem;
+    }
+}
+.intro__inner_profession{
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: fade(@main_color_black, 70%);
+}
+.intro__inner_social, .intro__inner_btns{
+    display: flex;
+}
+.intro__inner_social{
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+.social__link{
+    margin-right: 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+.intro__inner_btns{
+    @media @big-tablet{
+        flex-direction: column;
+        max-width: 70%;
+    }
+}
+.intro__inner_btns a{
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 3rem 1.5rem 0 0;
+    border: 1px solid #8d8d8e;
+    color: #737274;
+    transition: all .3s ease;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    min-width: 170px;
+    text-align: center;
+    
+    &:hover{
+        background: @main_color_black;
+        color: @white;
+        border: 1ps solid @main_color_black;
+        box-shadow: 3px 3px 10px @main_color_black;
+    }
+}
+.inner__photo{
+    position: absolute;
+    bottom: -1px;
+    right: 6%;
+    z-index: 1;
+
+    @media @big-tablet{
+        width: 350px;
+    }
+}

@@ -1,0 +1,50 @@
+//main: style.less
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.btn{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: @main_color_black;
+    border: 1px solid @main_color_black;
+    border-radius: 2rem;
+    background-color: transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @main_color_black;
+        color: @white;
+        box-shadow: 2px 2px 5px @light_gray;
+    }
+
+    &--thin{
+        min-width: 145px;
+
+        font-size: 0.8rem;
+        color: @light_gray;
+        border: 1px solid @light_gray;
+    }
+    &--thin:first-child{
+        margin-right: 15px;
+    }
+    &--small{
+        max-width: 150px;
+        margin: auto;
+    }
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.no-margin{
+    margin: 0;
+}

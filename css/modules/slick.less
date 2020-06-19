@@ -1,0 +1,54 @@
+//main: ../style.less
+
+.slick-dots{
+    position: absolute;
+    bottom: 1.4rem;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    li{
+        margin: 0 .5rem;
+
+        &.slick-active button{
+            background-color: #fff;
+        }
+    }
+
+    button{
+        width: 11px;
+        height: 11px;
+
+        padding: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+
+        background: transparent;
+
+        font-size: 0;
+        color: transparent;
+
+        cursor: pointer;
+
+        outline: none;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.modal__work_footer button{
+    outline: 0;
+
+    &:focus{
+        outline: 0;
+    }
+}

@@ -1,0 +1,60 @@
+//compress: true
+
+/*COMMON STYLES*/
+
+@import "vars";
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @main_color_black;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+h1, h2, h3, h4{
+    margin: 0;
+}
+*, *:before, *:after{
+    box-sizing: border-box /*padding отсчитывается внутрь блочного элемента*/
+}
+
+/*VENDORS*/
+
+@import "vendor/slick.less";
+
+/*MODULES*/
+
+@import "modules/container";
+@import "modules/header";
+@import "modules/header_user";
+@import "modules/header_nav";
+@import "modules/header__intro";
+@import "modules/works";
+@import "modules/about";
+@import "modules/reviews.less";
+@import "modules/news.less";
+@import "modules/footer.less";
+@import "modules/modal.less";
+@import "modules/modal-work.less";
+@import "modules/modal-resume.less";
+@import "modules/modal-timeline.less";
+@import "modules/progress-bar.less";
+@import "modules/maol_contact.less";
+@import "modules/contact_form.less";
+@import "helpers";
+@import "modules/slick.less";
+
+/*MEDIA BLOCK*/
+
+@import "media/burger.less";

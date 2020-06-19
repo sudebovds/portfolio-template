@@ -1,0 +1,84 @@
+//main: ../style.less
+
+.about{
+    margin: 4.4rem 0 8.4rem 0;
+}
+.about__iner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1090px;
+}
+
+/*ABOUT LEFT*/
+
+.about__inner_images, .about__iner_description{
+    width: 50%;
+}
+.about__inner_dude{
+    position: relative;
+    z-index: 3;
+}
+.about__inner_images{
+    position: relative;
+    z-index: 2;
+    //background: url(../images/about_bgr.jpg) no-repeat center bottom;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 413px;
+        height: 413px;
+        background-color: fade(@light_gray, 30%);  
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+/*ABOUT RIGHT*/
+
+.about__iner_description{
+    padding: 0 0 0 3.2rem;
+}
+.about__description_introduction{
+    font-size: 3rem;
+    font-weight: 700;
+    color: @main_color_black;
+    text-transform: uppercase;
+
+}
+.about__description_title{
+    font-size: 6rem;
+    font-weight: 700;
+    color: fade(@light_gray, 60%);
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+.about__description_paragraph{
+    font-size: 0.8rem;
+    color: fade(@light_gray, 70%);
+    line-height: 2;
+    margin: 2rem 0 4rem 0;
+}
+
+/*ABOUT BTNS*/
+
+.about__description_btns{
+    display: flex;
+}
+.about__description_btns a{
+    padding: 1rem 2.4rem 1rem 2.4rem;
+    color: @main_color_black;
+    text-decoration: none;
+    border: 1px solid @main_color_black;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    margin: 0 1.8rem 0 0;
+
+    &:hover{
+        background-color: @main_color_black;
+        color: @white;
+        box-shadow: 0 0 4px @main_color_black;
+    }
+}
