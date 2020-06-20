@@ -10,11 +10,19 @@
     a{
         color: @light_gray;
         text-decoration: none;
+
+        @media @tablet{
+            font-size: 12px;
+        }
     }
 }
 .footer__inner, .footer_left{
     display: flex;
     justify-content: space-between;
+
+    @media @mobile{
+        flex-direction: column;
+    }
 }
 .footer__hire_btn{
     padding: .5rem 1.5rem;
@@ -33,9 +41,11 @@
 .footer__copyright{
     margin-right: 1.2rem;
 }
+
 .footer__hire_btn{
     margin-left: 1.2rem;
 }
+
 .footer__right_link, .footer__social_link{
     padding: 0 .3rem;
 }

@@ -26,20 +26,23 @@
 .works__portfolio{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
     margin: -1rem;   
     
     &_item{
         flex-basis: 33.33%;
         padding: 1rem 1rem 1rem 1rem;
         
-
+        @media @mobile{
+            flex-basis: 100%;
+        }
+        
         @media @tablet{
             width: 50%;
         }
 
-        @media @mobile{
-            flex-basis: 100%;
-        }
     }
 }
 

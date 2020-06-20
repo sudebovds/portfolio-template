@@ -1,16 +1,21 @@
 //main: ../style.less
 
 .about{
-    margin: 4.4rem 0 8.4rem 0;
+    margin: 120px 0 8.4rem 0;
 
     @media @tablet {
         margin-top: 0;
     }
-}
-.about__iner{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1090px;
+
+    @media @mobile {
+        margin-bottom: 4rem;
+    }    
+
+    &__iner{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1090px;
+    }
 }
 
 /*ABOUT LEFT*/
@@ -40,12 +45,21 @@
         bottom: 0;
         z-index: 1;
     }
+
+    @media @mobile{
+        display: none;    
+    }
 }
 
 /*ABOUT RIGHT*/
 
 .about__iner_description{
     padding: 0 0 0 3.2rem;
+
+    @media @mobile{
+        width: 100%; 
+        padding-left: 1rem;  
+    }
 }
 .about__description_introduction{
     font-size: 3rem;
@@ -53,7 +67,7 @@
     color: @main_color_black;
     text-transform: uppercase;
 
-    @media @tablet{
+    @media @mobile{
 
     }
 
