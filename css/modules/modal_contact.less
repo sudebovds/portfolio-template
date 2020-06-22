@@ -8,20 +8,31 @@
 }
 .modal__contact{
     display: flex;
-}
-.modal__contact_left{
-    width: 47%;
-    padding: 2rem;
-}
-.modal__contact_right{
-    width: 53%;
 
-    background: #000
-    url(https://placehold.it/477x700) center no-repeat;
-}
-.modal__contact_ifno{
-    padding: 0;
-    margin: 2rem 0 3rem 0;
+    &_left{
+        width: 47%;
+        padding: 2rem;
+
+        @media @mobile{
+            width: 100%;
+        }
+    }
+
+    &_right{
+        width: 53%;
+    
+        background: #000
+        url(https://placehold.it/477x700) center no-repeat;
+
+        @media @mobile{
+            display: none;
+        }
+    }
+
+    &_ifno{
+        padding: 0;
+        margin: 2rem 0 3rem 0;
+    }
 }
 .contact__info_item{
     list-style: none;

@@ -1,30 +1,37 @@
 //main: ../style.less
 
-.intro__inner{
-    display: flex;
-    
-    padding: 6.6rem 0 8rem 0;
+.intro{
     position: relative;
+
+    &__inner{
+        display: flex;
+        
+        padding: 6.6rem 0 8rem 0;
+        position: relative;
+        
+        background: url(../images/dude_bgr.png) right bottom no-repeat;
     
-    background: url(../images/dude_bgr.png) right bottom no-repeat;
+        border-bottom: 1px solid fade(@gray_color, 30%);
+    
+        @media @big-tablet{
+            padding: 3rem 0 3rem 0;
+    
+            background-size: auto 445px;
+        }
+    }
 
-    border-bottom: 1px solid fade(@gray_color, 30%);
-
-    @media @big-tablet{
-        padding: 3rem 0 3rem 0;
-
-        background-size: auto 445px;
+    @media @tablet{
+        top: 93px;
+        margin-bottom: 100px;
     }
 }
+
 .intro__inner_content{
     width: 50%;
 
     @media @mobile{
         width: 100%;
     }
-}
-.intro__inner_content{
-    
 }
 .intro__content_subtitle{
     font-weight: 200;
@@ -63,6 +70,29 @@
     text-decoration: none;
 }
 .intro__inner_btns{
+
+    a{
+        padding: 1rem 2rem 1rem 2rem;
+        margin: 3rem 1.5rem 0 0;
+        border: 1px solid #8d8d8e;
+        color: #737274;
+        transition: all .3s ease;
+        background: transparent;
+        text-decoration: none;
+        border-radius: 25px;
+        display: inline-block;
+        text-transform: uppercase;
+        min-width: 170px;
+        text-align: center;
+        
+        &:hover{
+            background: @main_color_black;
+            color: @white;
+            border: 1ps solid @main_color_black;
+            box-shadow: 3px 3px 10px @main_color_black;
+        }
+    }
+
     @media @big-tablet{
         flex-direction: column;
         max-width: 70%;
@@ -85,27 +115,6 @@
             padding: 10px 5px !important;
             min-width: 100px !important;
         }
-    }
-}
-.intro__inner_btns a{
-    padding: 1rem 2rem 1rem 2rem;
-    margin: 3rem 1.5rem 0 0;
-    border: 1px solid #8d8d8e;
-    color: #737274;
-    transition: all .3s ease;
-    background: transparent;
-    text-decoration: none;
-    border-radius: 25px;
-    display: inline-block;
-    text-transform: uppercase;
-    min-width: 170px;
-    text-align: center;
-    
-    &:hover{
-        background: @main_color_black;
-        color: @white;
-        border: 1ps solid @main_color_black;
-        box-shadow: 3px 3px 10px @main_color_black;
     }
 }
 .inner__photo{
