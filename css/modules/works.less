@@ -4,6 +4,14 @@
 
 .works{
     padding: 1.4rem 0 2rem 0;
+
+    @media @mobile{
+        max-width: 370px;
+
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
 }
 .works__nav{
     display: flex;
@@ -26,11 +34,24 @@
 .works__portfolio{
     display: flex;
     flex-wrap: wrap;
-    margin: -1rem;    
-}
-.works__portfolio_item{
-    flex-basis: 33.33%;
-    padding: 1rem 1rem 1rem 1rem;   
+    align-items: center;
+    justify-content: center;
+
+    margin: -1rem;   
+    
+    &_item{
+        flex-basis: 33.33%;
+        padding: 1rem 1rem 1rem 1rem;
+        
+        @media @mobile{
+            flex-basis: 100%;
+        }
+        
+        @media @tablet{
+            width: 50%;
+        }
+
+    }
 }
 
 /*PORTFOLIO ITEM*/

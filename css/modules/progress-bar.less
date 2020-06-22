@@ -4,12 +4,23 @@
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+
+    @media @mobile{
+        justify-content: start;
+
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 .modal__timeline_title.next{
     margin-top: 2rem;
 }
 .progress-bar__right{
     padding-left: 1.2rem;
+
+    @media @mobile{
+        padding: 0;
+    }
 }
 .progress-bar__bar{
     width: 139px;
@@ -26,4 +37,8 @@
 .progress-bar__titles{
     font-size: .94rem;
     font-weight: 300;
+
+    @media @mobile{
+        margin-bottom: .5rem;
+    }
 }

@@ -105,3 +105,14 @@ modalCall.on("click", function (event) { //show
 
     current_slider.slick("slickNext");
  });
+
+ /* MOBILE NAVIGATION */
+
+ const navToggle = $('#navToggle');
+ const nav = $('#headerNav');
+
+ navToggle.on('click', () => {
+    event.preventDefault();
+
+    nav.toggleClass('show');
+ });
