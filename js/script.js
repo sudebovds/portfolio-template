@@ -1,4 +1,4 @@
-/* CUMMON FUNCTIONS */
+/* COMMON FUNCTIONS */
 
 function deleteDefaultAction(e){
     e.preventDefault();
